@@ -100,7 +100,7 @@ public class BaseTest {
 	public LandingPage launchApplication() throws IOException  {
 
 		initializeDriver();
-
+System.out.println("for the commt");
 		page = new LandingPage(driver);
 		page.goTo();
 

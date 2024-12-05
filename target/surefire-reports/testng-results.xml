@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-04T17:16:35 SAST" name="Suite" finished-at="2024-12-04T17:17:57 SAST" duration-ms="82625">
+  <suite started-at="2024-12-05T12:25:00 SAST" name="Suite" finished-at="2024-12-05T12:26:04 SAST" duration-ms="64011">
     <groups>
       <group name="Smoke">
-        <method signature="StandAlone2.SubmitOrder(java.util.HashMap)[pri:0, instance:MichealSeleniumAutomation.StandAlone2@1807e3f6]" name="SubmitOrder" class="MichealSeleniumAutomation.StandAlone2"/>
+        <method signature="StandAlone2.SubmitOrder(java.util.HashMap)[pri:0, instance:MichealSeleniumAutomation.StandAlone2@71ba6d4e]" name="SubmitOrder" class="MichealSeleniumAutomation.StandAlone2"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-12-04T17:16:35 SAST" name="Base department" finished-at="2024-12-04T17:16:49 SAST" duration-ms="14704">
+    <test started-at="2024-12-05T12:25:00 SAST" name="Base department" finished-at="2024-12-05T12:25:12 SAST" duration-ms="12245">
       <class name="MichaelSeleniumAutomation.TestComponents.BaseTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MichaelSeleniumAutomation.TestComponents.BaseTest@68c9133c]" started-at="2024-12-04T17:16:35 SAST" name="launchApplication" finished-at="2024-12-04T17:16:49 SAST" duration-ms="14396" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MichaelSeleniumAutomation.TestComponents.BaseTest@1de76cc7]" started-at="2024-12-05T12:25:00 SAST" name="launchApplication" finished-at="2024-12-05T12:25:12 SAST" duration-ms="12099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method is-config="true" signature="closeTests()[pri:0, instance:MichaelSeleniumAutomation.TestComponents.BaseTest@68c9133c]" started-at="2024-12-04T17:16:49 SAST" name="closeTests" finished-at="2024-12-04T17:16:49 SAST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="closeTests()[pri:0, instance:MichaelSeleniumAutomation.TestComponents.BaseTest@1de76cc7]" started-at="2024-12-05T12:25:12 SAST" name="closeTests" finished-at="2024-12-05T12:25:12 SAST" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTests -->
       </class> <!-- MichaelSeleniumAutomation.TestComponents.BaseTest -->
     </test> <!-- Base department -->
-    <test started-at="2024-12-04T17:16:50 SAST" name="Stand Alone Department" finished-at="2024-12-04T17:17:24 SAST" duration-ms="34077">
+    <test started-at="2024-12-05T12:25:12 SAST" name="Stand Alone Department" finished-at="2024-12-05T12:25:38 SAST" duration-ms="25712">
       <class name="MichealSeleniumAutomation.StandAlone2">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MichealSeleniumAutomation.StandAlone2@1807e3f6]" started-at="2024-12-04T17:16:50 SAST" name="launchApplication" finished-at="2024-12-04T17:17:02 SAST" duration-ms="12076" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MichealSeleniumAutomation.StandAlone2@71ba6d4e]" started-at="2024-12-05T12:25:12 SAST" name="launchApplication" finished-at="2024-12-05T12:25:21 SAST" duration-ms="8916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:MichealSeleniumAutomation.StandAlone2@1807e3f6]" started-at="2024-12-04T17:17:03 SAST" name="SubmitOrder" data-provider="getData" finished-at="2024-12-04T17:17:11 SAST" duration-ms="8196" status="PASS">
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:MichealSeleniumAutomation.StandAlone2@71ba6d4e]" started-at="2024-12-05T12:25:21 SAST" name="SubmitOrder" data-provider="getData" finished-at="2024-12-05T12:25:27 SAST" duration-ms="6002" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitOrder -->
-        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:MichealSeleniumAutomation.StandAlone2@1807e3f6]" started-at="2024-12-04T17:17:11 SAST" name="SubmitOrder" data-provider="getData" finished-at="2024-12-04T17:17:21 SAST" duration-ms="10201" status="FAIL">
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:MichealSeleniumAutomation.StandAlone2@71ba6d4e]" started-at="2024-12-05T12:25:27 SAST" name="SubmitOrder" data-provider="getData" finished-at="2024-12-05T12:25:37 SAST" duration-ms="10053" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -51,25 +51,27 @@
   (Session info: chrome=131.0.6778.87)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '23.0.1'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.2', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20493620feda623d8f94f39700dab4fa, findElement {using=css selector, value=[id='userEmail']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zz/zyxvpxvq6cs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58938/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20493620feda623d8f94f39700dab4fa]]>
+Command: [c13f321c2b6858642469dc845eb76450, findElement {value=[id='userEmail'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zx/fj403cf14_v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61076}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61076/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c13f321c2b6858642469dc845eb76450]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[id='userEmail']"}
   (Session info: chrome=131.0.6778.87)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '23.0.1'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.2', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20493620feda623d8f94f39700dab4fa, findElement {using=css selector, value=[id='userEmail']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zz/zyxvpxvq6cs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58938/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20493620feda623d8f94f39700dab4fa
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+Command: [c13f321c2b6858642469dc845eb76450, findElement {value=[id='userEmail'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zx/fj403cf14_v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61076}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61076/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c13f321c2b6858642469dc845eb76450
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -83,11 +85,13 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
 at MichaelSeleniumAutomation.pageobjects.LandingPage.LoginApplication(LandingPage.java:42)
 at MichealSeleniumAutomation.StandAlone2.SubmitOrder(StandAlone2.java:55)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -96,7 +100,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
@@ -122,19 +126,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitOrder -->
-        <test-method signature="checkOrders(java.util.HashMap)[pri:0, instance:MichealSeleniumAutomation.StandAlone2@1807e3f6]" started-at="2024-12-04T17:17:23 SAST" name="checkOrders" finished-at="2024-12-04T17:17:23 SAST" depends-on-methods="MichealSeleniumAutomation.StandAlone2.SubmitOrder" duration-ms="0" status="SKIP">
+        <test-method signature="checkOrders(java.util.HashMap)[pri:0, instance:MichealSeleniumAutomation.StandAlone2@71ba6d4e]" started-at="2024-12-05T12:25:38 SAST" name="checkOrders" finished-at="2024-12-05T12:25:38 SAST" depends-on-methods="MichealSeleniumAutomation.StandAlone2.SubmitOrder" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method MichealSeleniumAutomation.StandAlone2.checkOrders() on instance MichealSeleniumAutomation.StandAlone2@1807e3f6 depends on not successfully finished methods 
-[MichealSeleniumAutomation.StandAlone2.SubmitOrder() on instance MichealSeleniumAutomation.StandAlone2@1807e3f6]]]>
+              <![CDATA[Method MichealSeleniumAutomation.StandAlone2.checkOrders() on instance MichealSeleniumAutomation.StandAlone2@71ba6d4e depends on not successfully finished methods 
+[MichealSeleniumAutomation.StandAlone2.SubmitOrder() on instance MichealSeleniumAutomation.StandAlone2@71ba6d4e]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MichealSeleniumAutomation.StandAlone2.checkOrders() on instance MichealSeleniumAutomation.StandAlone2@1807e3f6 depends on not successfully finished methods 
-[MichealSeleniumAutomation.StandAlone2.SubmitOrder() on instance MichealSeleniumAutomation.StandAlone2@1807e3f6]
+              <![CDATA[java.lang.Throwable: Method MichealSeleniumAutomation.StandAlone2.checkOrders() on instance MichealSeleniumAutomation.StandAlone2@71ba6d4e depends on not successfully finished methods 
+[MichealSeleniumAutomation.StandAlone2.SubmitOrder() on instance MichealSeleniumAutomation.StandAlone2@71ba6d4e]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
@@ -160,48 +164,50 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOrders -->
-        <test-method is-config="true" signature="closeTests()[pri:0, instance:MichealSeleniumAutomation.StandAlone2@1807e3f6]" started-at="2024-12-04T17:17:23 SAST" name="closeTests" finished-at="2024-12-04T17:17:24 SAST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="closeTests()[pri:0, instance:MichealSeleniumAutomation.StandAlone2@71ba6d4e]" started-at="2024-12-05T12:25:38 SAST" name="closeTests" finished-at="2024-12-05T12:25:38 SAST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTests -->
       </class> <!-- MichealSeleniumAutomation.StandAlone2 -->
     </test> <!-- Stand Alone Department -->
-    <test started-at="2024-12-04T17:17:25 SAST" name="Error detection Department" finished-at="2024-12-04T17:17:57 SAST" duration-ms="32342">
+    <test started-at="2024-12-05T12:25:38 SAST" name="Error detection Department" finished-at="2024-12-05T12:26:04 SAST" duration-ms="25507">
       <class name="MichealSeleniumAutomation.ErrorValidations">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@4b520ea8]" started-at="2024-12-04T17:17:25 SAST" name="launchApplication" finished-at="2024-12-04T17:17:38 SAST" duration-ms="12848" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@6e9175d8]" started-at="2024-12-05T12:25:38 SAST" name="launchApplication" finished-at="2024-12-05T12:25:48 SAST" duration-ms="10178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="SubmitIncorrectOrder()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@4b520ea8]" started-at="2024-12-04T17:17:38 SAST" name="SubmitIncorrectOrder" finished-at="2024-12-04T17:17:44 SAST" duration-ms="6496" status="PASS">
+        <test-method signature="SubmitIncorrectOrder()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@6e9175d8]" started-at="2024-12-05T12:25:48 SAST" name="SubmitIncorrectOrder" finished-at="2024-12-05T12:25:52 SAST" duration-ms="4098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitIncorrectOrder -->
-        <test-method signature="testFailedLogin()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@4b520ea8]" started-at="2024-12-04T17:17:44 SAST" name="testFailedLogin" finished-at="2024-12-04T17:17:54 SAST" duration-ms="10143" status="FAIL">
+        <test-method signature="testFailedLogin()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@6e9175d8]" started-at="2024-12-05T12:25:52 SAST" name="testFailedLogin" finished-at="2024-12-05T12:26:02 SAST" duration-ms="10011" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"[id='userEmail']"}
   (Session info: chrome=131.0.6778.87)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '23.0.1'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.2', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0da5fea8430341cb00d1756040cb6a78, findElement {using=css selector, value=[id='userEmail']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zz/zyxvpxvq6cs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59141/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0da5fea8430341cb00d1756040cb6a78]]>
+Command: [2f5022d1cce4f3a31b8435f59e4f0fe5, findElement {value=[id='userEmail'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zx/fj403cf14_v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61146/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f5022d1cce4f3a31b8435f59e4f0fe5]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[id='userEmail']"}
   (Session info: chrome=131.0.6778.87)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '23.0.1'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.2', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0da5fea8430341cb00d1756040cb6a78, findElement {using=css selector, value=[id='userEmail']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zz/zyxvpxvq6cs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59141/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0da5fea8430341cb00d1756040cb6a78
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+Command: [2f5022d1cce4f3a31b8435f59e4f0fe5, findElement {value=[id='userEmail'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zx/fj403cf14_v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61146/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f5022d1cce4f3a31b8435f59e4f0fe5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -215,11 +221,13 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
 at MichaelSeleniumAutomation.pageobjects.LandingPage.LoginApplication(LandingPage.java:42)
 at MichealSeleniumAutomation.ErrorValidations.testFailedLogin(ErrorValidations.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -228,7 +236,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
@@ -254,32 +262,34 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFailedLogin -->
-        <test-method is-config="true" signature="close()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@4b520ea8]" started-at="2024-12-04T17:17:56 SAST" name="close" finished-at="2024-12-04T17:17:56 SAST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@6e9175d8]" started-at="2024-12-05T12:26:03 SAST" name="close" finished-at="2024-12-05T12:26:03 SAST" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="closeTests()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@4b520ea8]" started-at="2024-12-04T17:17:56 SAST" name="closeTests" finished-at="2024-12-04T17:17:57 SAST" depends-on-methods="MichealSeleniumAutomation.ErrorValidations.close" duration-ms="1180" status="FAIL">
+        <test-method is-config="true" signature="closeTests()[pri:0, instance:MichealSeleniumAutomation.ErrorValidations@6e9175d8]" started-at="2024-12-05T12:26:03 SAST" name="closeTests" finished-at="2024-12-05T12:26:04 SAST" depends-on-methods="MichealSeleniumAutomation.ErrorValidations.close" duration-ms="460" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '23.0.1'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.2', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0da5fea8430341cb00d1756040cb6a78, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zz/zyxvpxvq6cs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59141/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0da5fea8430341cb00d1756040cb6a78]]>
+Command: [2f5022d1cce4f3a31b8435f59e4f0fe5, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zx/fj403cf14_v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61146/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f5022d1cce4f3a31b8435f59e4f0fe5]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '23.0.1'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.2', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0da5fea8430341cb00d1756040cb6a78, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zz/zyxvpxvq6cs...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59141/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0da5fea8430341cb00d1756040cb6a78
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+Command: [2f5022d1cce4f3a31b8435f59e4f0fe5, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.87, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: /var/folders/zx/fj403cf14_v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61146/devtoo..., se:cdpVersion: 131.0.6778.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2f5022d1cce4f3a31b8435f59e4f0fe5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -291,8 +301,10 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
 at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
 at MichaelSeleniumAutomation.TestComponents.BaseTest.closeTests(BaseTest.java:113)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
