@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="MichaelSeleniumAutomation.TestComponents.Listerners"/>
+  </listeners>
+  <test thread-count="5" name="Stand Alone Department(failed)">
+    <classes>
+      <class name="MichealSeleniumAutomation.StandAlone2">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="checkOrders" invocation-numbers="0 1"/>
+          <include name="closeTests"/>
+          <include name="SubmitOrder" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- MichealSeleniumAutomation.StandAlone2 -->
+    </classes>
+  </test> <!-- Stand Alone Department(failed) -->
+  <test thread-count="5" name="Error detection Department(failed)">
+    <classes>
+      <class name="MichealSeleniumAutomation.ErrorValidations">
+        <methods>
+          <include name="testFailedLogin"/>
+          <include name="close"/>
+          <include name="launchApplication"/>
+          <include name="closeTests"/>
+        </methods>
+      </class> <!-- MichealSeleniumAutomation.ErrorValidations -->
+    </classes>
+  </test> <!-- Error detection Department(failed) -->
+</suite> <!-- Failed suite [Suite] -->

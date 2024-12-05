@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	
+
+
+	<listeners>
+		<listener class-name="MichaelSeleniumAutomation.TestComponents.Listerners" />
+	</listeners>
+
+
+	<test parallel="tests" thread-count="5" name="Base department">
+
+		<classes>
+			<class name="MichaelSeleniumAutomation.TestComponents.BaseTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Stand Alone Department">
+		<classes>
+
+			<class name="MichealSeleniumAutomation.StandAlone2" />
+
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Error detection Department">
+		<classes>
+
+			<class name="MichealSeleniumAutomation.ErrorValidations" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
