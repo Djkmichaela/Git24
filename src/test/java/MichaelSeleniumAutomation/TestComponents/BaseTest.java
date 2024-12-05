@@ -87,7 +87,7 @@ public class BaseTest {
 		return data;
 	}
 	
-	// taking a screenshot
+	// taking a screenshot right below
 
 	public String takeScreenShot(String testCaseName, WebDriver driver) throws IOException {
 
