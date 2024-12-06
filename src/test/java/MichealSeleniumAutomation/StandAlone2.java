@@ -118,7 +118,7 @@ public class StandAlone2 extends BaseTest {
 		orddr.waitForElementByElement(driver.findElement(By.cssSelector("[id='userEmail']")));
 		
 	
-		//ProductCatalogue abs = page.LoginApplication(input.get("email"), input.get("password"));
+		//ProductCatalogue abs = page.LoginApplication(input.get("email"), input.get("password")); testing
 
 		
 	}
