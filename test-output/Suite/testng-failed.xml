@@ -4,24 +4,11 @@
   <listeners>
     <listener class-name="MichaelSeleniumAutomation.TestComponents.Listerners"/>
   </listeners>
-  <test thread-count="5" name="Stand Alone Department(failed)">
-    <classes>
-      <class name="MichealSeleniumAutomation.StandAlone2">
-        <methods>
-          <include name="launchApplication"/>
-          <include name="checkOrders"/>
-          <include name="closeTests"/>
-          <include name="SubmitOrder" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- MichealSeleniumAutomation.StandAlone2 -->
-    </classes>
-  </test> <!-- Stand Alone Department(failed) -->
   <test thread-count="5" name="Error detection Department(failed)">
     <classes>
       <class name="MichealSeleniumAutomation.ErrorValidations">
         <methods>
           <include name="testFailedLogin"/>
-          <include name="close"/>
           <include name="launchApplication"/>
           <include name="closeTests"/>
         </methods>

@@ -13,6 +13,7 @@ import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
+
 import MichaelSeleniumAutomation.TestComponents.BaseTest;
 import MichaelSeleniumAutomation.pageobjects.CartPage;
 import MichaelSeleniumAutomation.pageobjects.ProductCatalogue;
@@ -23,6 +24,10 @@ public class ErrorValidations extends BaseTest {
 	public void testFailedLogin() {
 		
 		page.LoginApplication("michad@gmail.com", "padkdkfd");
+		ProductCatalogue ab = new ProductCatalogue(driver);
+		
+		ab.waitForToastToDisappear("Logout Successfully");
+		ab.waitForToast();
 		AssertJUnit.assertEquals(page.failedLogin(), "Incorrect email or password.");
 		
 	}
@@ -49,7 +54,7 @@ public class ErrorValidations extends BaseTest {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.invisibilityOfElementWithText(By.xpath("//div[@id='toast-container']"),
 				"Login Successfully"));
-
+		abs.waitForElemenToDisappearByElement(driver.findElement(By.cssSelector(".ng-animating")));
 		abs.waitForToast();
 		System.out.println(driver.findElement(By.xpath("//div[@id='toast-container']")).getText());
 		AssertJUnit.assertEquals(abs.toastText(), "Product Added To Cart");
@@ -60,10 +65,11 @@ public class ErrorValidations extends BaseTest {
 
 		AssertJUnit.assertFalse(cc.ItemInCart("IPHONE 13 PRO3"));
 		
+		driver.findElement(By.xpath("(//button[@class='btn btn-custom'])[4]")).click();
+		abs.waitForToastToDisappear("Logout Successfully");
+		abs.waitForElementByElement(driver.findElement(By.cssSelector("[id='userEmail']")));
+		
 	}
 	
-	@AfterTest()
-	public void close() {
-		driver.close();
-	}
+
 }
