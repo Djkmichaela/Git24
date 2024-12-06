@@ -101,6 +101,7 @@ public class BaseTest {
 
 		initializeDriver();
 System.out.println("for the commt");
+System.out.println("for the commt");
 		page = new LandingPage(driver);
 		page.goTo();
 

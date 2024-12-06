@@ -9,7 +9,7 @@
       <class name="MichealSeleniumAutomation.StandAlone2">
         <methods>
           <include name="launchApplication"/>
-          <include name="checkOrders" invocation-numbers="0 1"/>
+          <include name="checkOrders"/>
           <include name="closeTests"/>
           <include name="SubmitOrder" invocation-numbers="1"/>
         </methods>

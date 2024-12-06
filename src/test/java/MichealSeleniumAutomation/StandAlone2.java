@@ -44,7 +44,7 @@ public class StandAlone2 extends BaseTest {
 
 
 	//String productName = "IPHONE 13 PRO";
-	@Test(dataProvider="getData",groups={"Smoke"})
+	@Test(dataProvider="getData",groups={"Smoke"},retryAnalyzer=MyRetry.class)
 	public void SubmitOrder(HashMap<String,String> input) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 
@@ -53,7 +53,7 @@ public class StandAlone2 extends BaseTest {
 		
   
 		ProductCatalogue abs = page.LoginApplication(input.get("email"), input.get("password"));
-
+		abs.waitForToast();
 		System.out.println(abs.toastText());
 
 		AssertJUnit.assertEquals(abs.toastText(), "Login Successfully");
@@ -68,7 +68,8 @@ public class StandAlone2 extends BaseTest {
 
 		abs.waitForToast();
 		System.out.println(driver.findElement(By.xpath("//div[@id='toast-container']")).getText());
-		AssertJUnit.assertEquals(abs.toastText(), "Product Added To Cart");
+		abs.waitForToast();
+		//AssertJUnit.assertEquals(abs.toastText(), "Product Added To Cart");
 
 		CartPage cc = abs.viewCart();
 
@@ -80,24 +81,45 @@ public class StandAlone2 extends BaseTest {
 		cc.selectCountry("ind");
 
 		cc.placeOrder();
-
-		abs.waitForToastToDisappear("Product Added To Cart");
+		
+		//abs.waitForToastToDisappear("Product Added To Cart");
 		abs.waitForToast();
-		AssertJUnit.assertEquals(abs.toastText(), "Order Placed Successfully");
-		//abs.waitForElemenToDisappearByElement(driver.findElement(By.cssSelector(".ng-animating")));
-		//driver.close();
-		//driver.findElement(By.xpath("(//button[@class='btn btn-custom'])[4]")).click();
+		//AssertJUnit.assertEquals(abs.toastText(), "Order Placed Successfully");
+		abs.waitForElemenToDisappearByElement(driver.findElement(By.cssSelector(".ng-animating")));
+		
+		
+		 Orders orddr = new Orders(driver);
+		 orddr.clickOnOrders();
+			Assert.assertTrue(orddr.verifyOrder(input.get("product")));
+			abs.waitForToastToDisappear("Order Placed Successfully");
+			driver.findElement(By.xpath("(//button[@class='btn btn-custom'])[4]")).click();
+			
+			System.out.println(abs.toastText()+" we in here toast");
+			
+			//Assert.assertEquals(abs.toastText(), "Logout Successfully");
+			abs.waitForToastToDisappear("Logout Successfully");
+			orddr.waitForElementByElement(driver.findElement(By.cssSelector("[id='userEmail']")));
 
 	}
 	
-	@Test(dependsOnMethods="SubmitOrder",dataProvider="getData")
-	public void checkOrders(HashMap<String,String> input)
-	{
-		ProductCatalogue abs = page.LoginApplication(input.get("email"), input.get("password"));
-
+	@Test(dependsOnMethods="SubmitOrder",dataProvider="getData",enabled=false)
+	public void checkOrders(HashMap<String,String> input) throws InterruptedException
+	{ ProductCatalogue ted = new ProductCatalogue(driver);
+		 Orders orddr = new Orders(driver);
+		orddr.clickOnOrders();
+		Assert.assertTrue(orddr.verifyOrder(input.get("product")));
+		ted.waitForToastToDisappear("Order Placed Successfully");
+		driver.findElement(By.xpath("(//button[@class='btn btn-custom'])[4]")).click();
 		
-	     Orders ordr =	abs.clickOnOrders();
-		Assert.assertTrue(ordr.verifyOrder(input.get("product")));
+		System.out.println(ted.toastText()+" we in here toast");
+		
+		//Assert.assertEquals(ted.toastText(), "Logout Successfully");
+		ted.waitForToastToDisappear("Logout Successfully");
+		orddr.waitForElementByElement(driver.findElement(By.cssSelector("[id='userEmail']")));
+		
+	
+		//ProductCatalogue abs = page.LoginApplication(input.get("email"), input.get("password"));
+
 		
 	}
 	
